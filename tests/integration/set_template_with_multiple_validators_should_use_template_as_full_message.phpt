@@ -8,7 +8,7 @@ use Respect\Validation\Exceptions\NestedValidationExceptionInterface;
 use Respect\Validation\Validator;
 
 try {
-    Validator::callback('is_string')->between(1, 2)->setTemplate('{{name}} is not tasty')->assert('something');
+    Validator::callback('is_string')->between(1, 2, false)->setTemplate('{{name}} is not tasty')->assert('something');
 } catch (NestedValidationExceptionInterface $e) {
     echo $e->getFullMessage();
 }
