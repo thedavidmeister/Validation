@@ -74,7 +74,7 @@ use Respect\Validation\Rules\Key;
  * @method static Validator macAddress()
  * @method static Validator max(mixed $maxValue, bool $inclusive = false)
  * @method static Validator mimetype(string $mimetype)
- * @method static Validator min(mixed $minValue, bool $inclusive = false)
+ * @method static Validator min(mixed $minValue, bool $inclusive = true)
  * @method static Validator minimumAge(int $age)
  * @method static Validator multiple(int $multipleOf)
  * @method static Validator negative()
