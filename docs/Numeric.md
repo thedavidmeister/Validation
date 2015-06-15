@@ -11,5 +11,5 @@ v::numeric()->validate('135.0'); //true
 
 See also:
 
-  * [Int](Int.md)
+  * [IntVal](IntVal.md)
   * [Digit](Digit.md)

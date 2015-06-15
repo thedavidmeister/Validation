@@ -11,13 +11,13 @@
 
 namespace Respect\Validation\Rules;
 
-class IntTest extends \PHPUnit_Framework_TestCase
+class IntValTest extends \PHPUnit_Framework_TestCase
 {
     protected $intValidator;
 
     protected function setUp()
     {
-        $this->intValidator = new Int();
+        $this->intValidator = new IntVal();
     }
 
     /**
@@ -32,9 +32,9 @@ class IntTest extends \PHPUnit_Framework_TestCase
 
     /**
      * @dataProvider providerForNotInt
-     * @expectedException Respect\Validation\Exceptions\IntException
+     * @expectedException Respect\Validation\Exceptions\IntValException
      */
-    public function testInvalidIntegersShouldThrowIntException($input)
+    public function testInvalidIntegersShouldThrowIntValException($input)
     {
         $this->assertFalse($this->intValidator->__invoke($input));
         $this->assertFalse($this->intValidator->assert($input));

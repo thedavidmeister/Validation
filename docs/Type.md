@@ -16,6 +16,6 @@ See also
   * [Bool](Bool.md)
   * [Float](Float.md)
   * [Instance](Instance.md)
-  * [Int](Int.md)
+  * [IntVal](IntVal.md)
   * [Object](Object.md)
   * [String](String.md)

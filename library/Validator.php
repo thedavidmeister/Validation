@@ -62,7 +62,7 @@ use Respect\Validation\Rules\Key;
  * @method static Validator hexRgbColor()
  * @method static Validator in(mixed $haystack, bool $compareIdentical = false)
  * @method static Validator instance(string $instanceName)
- * @method static Validator int()
+ * @method static Validator intVal()
  * @method static Validator ip(mixed $ipOptions = null)
  * @method static Validator json()
  * @method static Validator key(string $reference, Validatable $referenceValidator = null, bool $mandatory = true)
