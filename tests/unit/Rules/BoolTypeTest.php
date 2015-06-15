@@ -11,11 +11,11 @@
 
 namespace Respect\Validation\Rules;
 
-class BoolTest extends \PHPUnit_Framework_TestCase
+class BoolTypeTest extends \PHPUnit_Framework_TestCase
 {
-    public function testBooleanValuesONLYShouldReturnTrue()
+    public function testBoolTypeValuesONLYShouldReturnTrue()
     {
-        $validator = new Bool();
+        $validator = new BoolType();
         $this->assertTrue($validator->__invoke(''));
         $this->assertTrue($validator->__invoke(true));
         $this->assertTrue($validator->__invoke(false));
@@ -26,17 +26,17 @@ class BoolTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @expectedException Respect\Validation\Exceptions\BoolException
+     * @expectedException Respect\Validation\Exceptions\BoolTypeException
      */
-    public function testInvalidBooleanShouldRaiseException()
+    public function testInvalidBoolTypeShouldRaiseException()
     {
-        $validator = new Bool();
+        $validator = new BoolType();
         $this->assertFalse($validator->check('foo'));
     }
 
-    public function testInvalidBooleanValuesShouldReturnFalse()
+    public function testInvalidBoolTypeValuesShouldReturnFalse()
     {
-        $validator = new Bool();
+        $validator = new BoolType();
         $this->assertFalse($validator->__invoke('foo'));
         $this->assertFalse($validator->__invoke(123123));
         $this->assertFalse($validator->__invoke(new \stdClass()));

@@ -3,7 +3,7 @@
 ## Types
 
   * [Arr](Arr.md)
-  * [Bool](Bool.md)
+  * [BoolType](BoolType.md)
   * [Date](Date.md)
   * [False](False.md)
   * [Float](Float.md)
@@ -39,7 +39,7 @@
 ## Numeric
 
   * [Between](Between.md)
-  * [Bool](Bool.md)
+  * [BoolType](BoolType.md)
   * [Even](Even.md)
   * [Float](Float.md)
   * [IntVal](IntVal.md)
@@ -178,7 +178,7 @@
   * [BankAccount](BankAccount.md)
   * [Between](Between.md)
   * [Bic](Bic.md)
-  * [Bool](Bool.md)
+  * [BoolType](BoolType.md)
   * [Call](Call.md)
   * [Callback](Callback.md)
   * [Charset](Charset.md)

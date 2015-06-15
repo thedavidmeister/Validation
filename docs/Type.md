@@ -13,7 +13,7 @@ v::type('object')->validate(new stdClass()); //true
 See also
 
   * [Arr](Arr.md)
-  * [Bool](Bool.md)
+  * [BoolType](BoolType.md)
   * [Float](Float.md)
   * [Instance](Instance.md)
   * [IntVal](IntVal.md)
