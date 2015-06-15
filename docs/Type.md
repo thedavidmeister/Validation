@@ -18,4 +18,4 @@ See also
   * [Instance](Instance.md)
   * [IntVal](IntVal.md)
   * [Object](Object.md)
-  * [String](String.md)
+  * [StrType](StrType.md)

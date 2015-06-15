@@ -8,7 +8,7 @@ use Respect\Validation\Exceptions\NestedValidationExceptionInterface;
 use Respect\Validation\Validator;
 
 try {
-    Validator::string()->length(2, 15)->assert(0);
+    Validator::strType()->length(2, 15)->assert(0);
 } catch (NestedValidationExceptionInterface $e) {
     echo $e->getFullMessage();
 }

@@ -1,11 +1,11 @@
-# String
+# StrType
 
-- `v::string()`
+- `v::strType()`
 
 Validates a string.
 
 ```php
-v::string()->validate('hi'); //true
+v::strType()->validate('hi'); //true
 ```
 
 See also:

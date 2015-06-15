@@ -12,8 +12,8 @@ v::noWhitespace()->validate("foo\nbar"); //false
 Like other rules the input is still optional.
 
 ```php
-v::string()->noWhitespace()->validate('');  //true
-v::string()->noWhitespace()->validate(' '); //false
+v::strType()->noWhitespace()->validate('');  //true
+v::strType()->noWhitespace()->validate(' '); //false
 ```
 
 This is most useful when chaining with other validators such as `v::alnum()`
