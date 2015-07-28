@@ -11,14 +11,14 @@
 
 namespace Respect\Validation\Exceptions;
 
-class FalseException extends ValidationException
+class FalseValException extends ValidationException
 {
     public static $defaultTemplates = array(
         self::MODE_DEFAULT => array(
-            self::STANDARD => '{{name}} is not considered as "False"',
+            self::STANDARD => '{{name}} is not considered as `false`',
         ),
         self::MODE_NEGATIVE => array(
-            self::STANDARD => '{{name}} is considered as "False"',
+            self::STANDARD => '{{name}} is considered as `false`',
         ),
     );
 }

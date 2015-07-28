@@ -15,4 +15,4 @@ v::true()->validate('yes'); //true
 
 See also
 
-  * [False](False.md)
+  * [FalseVal](FalseVal.md)
