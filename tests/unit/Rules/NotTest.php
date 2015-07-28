@@ -41,9 +41,9 @@ class NotTest extends \PHPUnit_Framework_TestCase
             array(new AllOf(new NoWhitespace(), new Digit()), 'as df'),
             array(new AllOf(new NoWhitespace(), new Digit()), '12 34'),
             array(new AllOf(new AllOf(new NoWhitespace(), new Digit())), '12 34'),
-            array(new AllOf(new NoneOf(new Numeric(), new IntVal())), 13.37),
-            array(new NoneOf(new Numeric(), new IntVal()), 13.37),
-            array(Validator::noneOf(Validator::numeric(), Validator::intVal()), 13.37),
+            array(new AllOf(new NoneOf(new NumericVal(), new IntVal())), 13.37),
+            array(new NoneOf(new NumericVal(), new IntVal()), 13.37),
+            array(Validator::noneOf(Validator::numericVal(), Validator::intVal()), 13.37),
         );
     }
 
@@ -52,9 +52,9 @@ class NotTest extends \PHPUnit_Framework_TestCase
         return array(
             array(new IntVal(), ''),
             array(new IntVal(), 123),
-            array(new AllOf(new OneOf(new Numeric(), new IntVal())), 13.37),
-            array(new OneOf(new Numeric(), new IntVal()), 13.37),
-            array(Validator::oneOf(Validator::numeric(), Validator::intVal()), 13.37),
+            array(new AllOf(new OneOf(new NumericVal(), new IntVal())), 13.37),
+            array(new OneOf(new NumericVal(), new IntVal()), 13.37),
+            array(Validator::oneOf(Validator::numericVal(), Validator::intVal()), 13.37),
         );
     }
 }

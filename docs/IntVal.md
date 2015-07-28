@@ -11,5 +11,5 @@ v::intVal()->validate(10); //true
 
 See also:
 
-  * [Numeric](Numeric.md)
+  * [NumericVal](NumericVal.md)
   * [Digit](Digit.md)
