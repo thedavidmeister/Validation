@@ -2,7 +2,7 @@
 
 ## Types
 
-  * [Arr](Arr.md)
+  * [ArrType](ArrType.md)
   * [BoolType](BoolType.md)
   * [Date](Date.md)
   * [FalseVal](FalseVal.md)
@@ -84,7 +84,7 @@
 
 ## Arrays
 
-  * [Arr](Arr.md)
+  * [ArrType](ArrType.md)
   * [Contains](Contains.md)
   * [Each](Each.md)
   * [EndsWith](EndsWith.md)
@@ -172,7 +172,7 @@
   * [Alpha](Alpha.md)
   * [AlwaysInvalid](AlwaysInvalid.md)
   * [AlwaysValid](AlwaysValid.md)
-  * [Arr](Arr.md)
+  * [ArrType](ArrType.md)
   * [Attribute](Attribute.md)
   * [Bank](Bank.md)
   * [BankAccount](BankAccount.md)

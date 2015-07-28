@@ -15,7 +15,7 @@ use ArrayAccess;
 use Countable;
 use Traversable;
 
-class Arr extends AbstractRule
+class ArrType extends AbstractRule
 {
     public function validate($input)
     {

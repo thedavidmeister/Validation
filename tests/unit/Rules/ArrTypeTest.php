@@ -15,13 +15,13 @@ class TestAccess extends \ArrayObject implements \ArrayAccess, \Countable, \Trav
 {
 }
 
-class ArrTest extends \PHPUnit_Framework_TestCase
+class ArrTypeTest extends \PHPUnit_Framework_TestCase
 {
     protected $object;
 
     protected function setUp()
     {
-        $this->object = new Arr();
+        $this->object = new ArrType();
     }
 
     /**
@@ -36,7 +36,7 @@ class ArrTest extends \PHPUnit_Framework_TestCase
 
     /**
      * @dataProvider providerForNotArray
-     * @expectedException Respect\Validation\Exceptions\ArrException
+     * @expectedException Respect\Validation\Exceptions\ArrTypeException
      */
     public function testNotArraysShouldThrowArrException($input)
     {
