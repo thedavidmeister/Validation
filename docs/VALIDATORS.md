@@ -13,7 +13,7 @@
   * [Numeric](Numeric.md)
   * [Object](Object.md)
   * [StrType](StrType.md)
-  * [True](True.md)
+  * [TrueVal](TrueVal.md)
   * [Type](Type.md)
   * [Xdigit](Xdigit.md)
 
@@ -255,7 +255,7 @@
   * [StrType](StrType.md)
   * [SymbolicLink](SymbolicLink.md)
   * [Tld](Tld.md)
-  * [True](True.md)
+  * [TrueVal](TrueVal.md)
   * [Type](Type.md)
   * [Uploaded](Uploaded.md)
   * [Uppercase](Uppercase.md)
