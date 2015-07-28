@@ -11,7 +11,7 @@
 
 namespace Respect\Validation\Rules;
 
-class Float extends AbstractRule
+class FloatType extends AbstractRule
 {
     public function validate($input)
     {

@@ -14,7 +14,7 @@ See also
 
   * [Arr](Arr.md)
   * [BoolType](BoolType.md)
-  * [Float](Float.md)
+  * [FloatType](FloatType.md)
   * [Instance](Instance.md)
   * [IntVal](IntVal.md)
   * [Object](Object.md)

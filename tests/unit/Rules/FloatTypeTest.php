@@ -11,19 +11,19 @@
 
 namespace Respect\Validation\Rules;
 
-class FloatTest extends \PHPUnit_Framework_TestCase
+class FloatTypeTest extends \PHPUnit_Framework_TestCase
 {
     protected $floatValidator;
 
     protected function setUp()
     {
-        $this->floatValidator = new Float();
+        $this->floatValidator = new FloatType();
     }
 
     /**
-     * @dataProvider providerForFloat
+     * @dataProvider providerForFloatType
      */
-    public function testFloatNumbersShouldPass($input)
+    public function testFloatTypeNumbersShouldPass($input)
     {
         $this->assertTrue($this->floatValidator->assert($input));
         $this->assertTrue($this->floatValidator->__invoke($input));
@@ -31,16 +31,16 @@ class FloatTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @dataProvider providerForNotFloat
-     * @expectedException Respect\Validation\Exceptions\FloatException
+     * @dataProvider providerForNotFloatType
+     * @expectedException Respect\Validation\Exceptions\FloatTypeException
      */
-    public function testNotFloatNumbersShouldFail($input)
+    public function testNotFloatTypeNumbersShouldFail($input)
     {
         $this->assertFalse($this->floatValidator->__invoke($input));
         $this->assertFalse($this->floatValidator->assert($input));
     }
 
-    public function providerForFloat()
+    public function providerForFloatType()
     {
         return array(
             array(''),
@@ -56,7 +56,7 @@ class FloatTest extends \PHPUnit_Framework_TestCase
         );
     }
 
-    public function providerForNotFloat()
+    public function providerForNotFloatType()
     {
         return array(
             array(null),
