@@ -11,7 +11,7 @@
 
 namespace Respect\Validation\Exceptions;
 
-class SymbolicLinkException extends ValidationException
+class LinkException extends ValidationException
 {
     public static $defaultTemplates = array(
         self::MODE_DEFAULT => array(

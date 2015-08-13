@@ -11,7 +11,7 @@
 
 namespace Respect\Validation\Rules;
 
-class SymbolicLink extends AbstractRule
+class Link extends AbstractRule
 {
     public function validate($input)
     {

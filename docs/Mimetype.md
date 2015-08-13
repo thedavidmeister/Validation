@@ -15,6 +15,6 @@ See also
   * [Executable](Executable.md)
   * [File](File.md)
   * [Readable](Readable.md)
-  * [SymbolicLink](SymbolicLink.md)
+  * [Link](Link.md)
   * [Uploaded](Uploaded.md)
   * [Writable](Writable.md)

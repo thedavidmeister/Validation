@@ -24,38 +24,38 @@ function is_link($link)
     return $return;
 }
 
-class SymbolicLinkTest extends \PHPUnit_Framework_TestCase
+class LinkTest extends \PHPUnit_Framework_TestCase
 {
     /**
-     * @covers Respect\Validation\Rules\SymbolicLink::validate
+     * @covers Respect\Validation\Rules\Link::validate
      */
     public function testValidSymbolicLinkShouldReturnTrue()
     {
         $GLOBALS['is_link'] = true;
 
-        $rule = new SymbolicLink();
+        $rule = new Link();
         $input = '/path/of/a/valid/link.lnk';
         $this->assertTrue($rule->validate($input));
     }
 
     /**
-     * @covers Respect\Validation\Rules\SymbolicLink::validate
+     * @covers Respect\Validation\Rules\Link::validate
      */
     public function testInvalidSymbolicLinkShouldThrowException()
     {
         $GLOBALS['is_link'] = false;
 
-        $rule = new SymbolicLink();
+        $rule = new Link();
         $input = '/path/of/an/invalid/link.lnk';
         $this->assertFalse($rule->validate($input));
     }
 
     /**
-     * @covers Respect\Validation\Rules\SymbolicLink::validate
+     * @covers Respect\Validation\Rules\Link::validate
      */
     public function testShouldValidateObjects()
     {
-        $rule = new SymbolicLink();
+        $rule = new Link();
         $object = $this->getMock('SplFileInfo', array('isLink'), array('somelink.lnk'));
         $object->expects($this->once())
                 ->method('isLink')
