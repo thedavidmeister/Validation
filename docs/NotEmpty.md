@@ -38,4 +38,4 @@ v::strType()->notEmpty()->validate("\t \n \r");  //false
 See also:
 
   * [NoWhitespace](NoWhitespace.md)
-  * [NullValue](NullValue.md)
+  * [NullType](NullType.md)
