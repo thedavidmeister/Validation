@@ -11,13 +11,13 @@
 
 namespace Respect\Validation\Rules;
 
-class ObjectTest extends \PHPUnit_Framework_TestCase
+class ObjTypeTest extends \PHPUnit_Framework_TestCase
 {
     protected $object;
 
     protected function setUp()
     {
-        $this->object = new Object();
+        $this->object = new ObjType();
     }
 
     /**
@@ -32,7 +32,7 @@ class ObjectTest extends \PHPUnit_Framework_TestCase
 
     /**
      * @dataProvider providerForNotObject
-     * @expectedException Respect\Validation\Exceptions\ObjectException
+     * @expectedException Respect\Validation\Exceptions\ObjTypeException
      */
     public function testNotObject($input)
     {

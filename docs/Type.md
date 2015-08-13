@@ -17,5 +17,5 @@ See also
   * [FloatType](FloatType.md)
   * [Instance](Instance.md)
   * [IntVal](IntVal.md)
-  * [Object](Object.md)
+  * [ObjType](ObjType.md)
   * [StrType](StrType.md)

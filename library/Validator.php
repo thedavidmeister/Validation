@@ -85,7 +85,7 @@ use Respect\Validation\Rules\Key;
  * @method static Validator noWhitespace()
  * @method static Validator nullType()
  * @method static Validator numeric()
- * @method static Validator object()
+ * @method static Validator objType()
  * @method static Validator odd()
  * @method static Validator oneOf()
  * @method static Validator perfectSquare()

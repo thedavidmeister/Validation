@@ -13,4 +13,4 @@ Message template for this validator includes `{{instanceName}}`.
 
 See also:
 
-  * [Object](Object.md)
+  * [ObjType](ObjType.md)

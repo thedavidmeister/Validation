@@ -1,11 +1,11 @@
-# Object
+# ObjType
 
-- `v::object()`
+- `v::objType()`
 
 Validates if the input is an object.
 
 ```php
-v::object()->validate(new stdClass); //true
+v::objType()->validate(new stdClass); //true
 ```
 
 See also:
