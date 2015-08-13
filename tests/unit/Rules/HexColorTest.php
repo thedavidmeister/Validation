@@ -11,14 +11,14 @@
 
 namespace Respect\Validation\Rules;
 
-class HexRgbColorTest extends \PHPUnit_Framework_TestCase
+class HexColorTest extends \PHPUnit_Framework_TestCase
 {
     /**
      * @dataProvider providerForValidHexRgbColor
      */
     public function testHexRgbColorValuesONLYShouldReturnTrue($validHexRgbColor)
     {
-        $validator = new HexRgbColor();
+        $validator = new HexColor();
 
         $this->assertTrue($validator->validate($validHexRgbColor));
     }
@@ -28,7 +28,7 @@ class HexRgbColorTest extends \PHPUnit_Framework_TestCase
      */
     public function testInvalidHexRgbColorValuesShouldReturnFalse($invalidHexRgbColor)
     {
-        $validator = new HexRgbColor();
+        $validator = new HexColor();
 
         $this->assertFalse($validator->validate($invalidHexRgbColor));
     }

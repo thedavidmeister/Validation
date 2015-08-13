@@ -18,4 +18,4 @@ See also:
 
   * [Digit](Digit.md)
   * [Alnum](Alnum.md)
-  * [HexRgbColor](HexRgbColor.md)
+  * [HexColor](HexColor.md)

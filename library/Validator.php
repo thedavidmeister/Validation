@@ -59,7 +59,7 @@ use Respect\Validation\Rules\Key;
  * @method static Validator filterVar(int $filter, mixed $options = null)
  * @method static Validator float()
  * @method static Validator graph(string $additionalChars = null)
- * @method static Validator hexRgbColor()
+ * @method static Validator hexColor()
  * @method static Validator in(mixed $haystack, bool $compareIdentical = false)
  * @method static Validator instance(string $instanceName)
  * @method static Validator intVal()

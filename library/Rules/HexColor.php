@@ -11,7 +11,7 @@
 
 namespace Respect\Validation\Rules;
 
-class HexRgbColor extends Xdigit
+class HexColor extends Xdigit
 {
     public function validate($input)
     {
